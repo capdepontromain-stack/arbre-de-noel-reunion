@@ -11,5 +11,5 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
-Sitemap: https://capdepontromain-stack.github.io/arbre-de-noel-reunion/sitemap.xml
-# Présentation pour les IA : https://capdepontromain-stack.github.io/arbre-de-noel-reunion/llms.txt
+Sitemap: https://arbredenoel974.re/sitemap.xml
+# Présentation pour les IA : https://arbredenoel974.re/llms.txt
