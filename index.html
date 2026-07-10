@@ -162,8 +162,41 @@ a.btn:hover::after,.btn:hover::after{left:130%}
 @keyframes chute{to{transform:translateY(115vh) rotate(320deg)}}
 
 /* fin wow */
+
+/* ===== FINITION GRANDE MARQUE ===== */
+::selection{background:#c8102e;color:#fff}
+h1,h2,h3{text-wrap:balance}
+p,li,figcaption{text-wrap:pretty}
+section[id]{scroll-margin-top:86px}
+:focus-visible{outline:3px solid #c8102e;outline-offset:3px;border-radius:4px}
+::-webkit-scrollbar{width:11px}
+::-webkit-scrollbar-track{background:transparent}
+::-webkit-scrollbar-thumb{background:#8f0b20;border-radius:8px;border:3px solid #fff}
+html{scrollbar-color:#8f0b20 transparent;scrollbar-width:thin}
+/* entrée de page : le héro se met en scène */
+@media (prefers-reduced-motion: no-preference){
+.hero .wrap>*:first-child>*{animation:entree .8s cubic-bezier(.2,.7,.2,1) both}
+.hero .wrap>*:first-child>*:nth-child(2){animation-delay:.12s}
+.hero .wrap>*:first-child>*:nth-child(3){animation-delay:.24s}
+.hero .wrap>*:first-child>*:nth-child(4){animation-delay:.36s}
+.hero .wrap>*:nth-child(2){animation:entree 1s cubic-bezier(.2,.7,.2,1) .3s both}
+@keyframes entree{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
+}
+.marquee:hover .defile{animation-play-state:paused}
+
+/* galerie harmonisée : recadrage uniforme, sauf affiches */
+.galerie .carte-photo img{aspect-ratio:4/3;object-fit:cover;object-position:center 30%}
+.galerie .carte-photo img[src*="affiche"]{aspect-ratio:auto;object-fit:contain;background:#fff}
+
+.cadeau,.citation,.etape,.pilier{box-shadow:0 1px 2px rgba(61,21,24,.06),0 8px 24px rgba(143,11,32,.1)}
+.cadeau:hover,.citation:hover{box-shadow:0 2px 4px rgba(61,21,24,.08),0 18px 44px rgba(143,11,32,.18)}
+.carte-photo figcaption{font-size:18px;line-height:1.3;padding:12px 8px 14px}
+.titre{letter-spacing:.5px}
+
+/* fin finition */
 </style>
 <style id="wow-css"></style>
+<style id="polish-css"></style>
 </head>
 <body>
 
