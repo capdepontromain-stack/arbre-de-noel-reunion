@@ -42,7 +42,8 @@ a{color:var(--rouge)}
 .topbar{position:relative}
 .burger{display:none;background:none;border:0;color:#fff;font-size:26px;line-height:1;cursor:pointer;padding:4px 10px}
 @media(max-width:720px){
-.burger{display:block}
+.burger{display:block;position:absolute;top:14px;right:14px}
+.topbar .logo{font-size:19px;max-width:74%;line-height:1.1}
 .topbar nav{display:none;position:absolute;top:100%;left:0;right:0;background:var(--fonce);flex-direction:column;align-items:stretch;gap:0;padding:6px 20px 16px;box-shadow:0 14px 26px rgba(0,0,0,.3);z-index:20}
 .topbar nav.open{display:flex}
 .topbar nav a{padding:13px 4px;font-size:15px;border-bottom:1px solid rgba(255,255,255,.18)}
