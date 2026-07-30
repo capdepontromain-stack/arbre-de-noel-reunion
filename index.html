@@ -533,15 +533,22 @@ figure figcaption{transition:color .2s ease}
 <!-- Nos derniers conseils (29/07/2026) : liens accueil → articles,
      pour que Google découvre le blog (7 pages sur 43 explorées avant ça) -->
 <section class="derniers-conseils" style="max-width:1080px;margin:0 auto;padding:48px 22px;">
+<style>
+.derniers-conseils ul{gap:12px !important}
+.derniers-conseils li{border:1px solid rgba(128,128,128,.28);border-radius:12px;transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease}
+.derniers-conseils li:hover{transform:translateY(-2px);border-color:rgba(128,128,128,.6);box-shadow:0 8px 20px rgba(0,0,0,.14)}
+.derniers-conseils li a{display:block;padding:14px 16px;text-decoration:none;font-weight:600;line-height:1.5}
+.derniers-conseils li a::after{content:" \2192"}
+</style>
   <h2 style="margin:0 0 6px;">Nos derniers conseils</h2>
   <p style="opacity:.75;margin:0 0 18px;">Le blog de Noël : bien préparer l'arbre de Noël de votre entreprise.</p>
   <ul style="list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:6px 26px;">
-      <li style="padding:7px 0;">→ <a href="/blog/deroule-programme-arbre-de-noel-entreprise-reunion/">Le déroulé type d&#x27;un arbre de Noël, heure par heure</a></li>
-      <li style="padding:7px 0;">→ <a href="/blog/spectacle-noel-arbre-de-noel-entreprise-reunion/">Quel spectacle pour votre arbre de Noël d&#x27;entreprise ?</a></li>
-      <li style="padding:7px 0;">→ <a href="/blog/arbre-de-noel-entreprise-2026-reserver-avant-rentree/">Arbre de Noël d&#x27;entreprise 2026 : pourquoi réserver avant la rentrée</a></li>
-      <li style="padding:7px 0;">→ <a href="/blog/noel-marmailles-commune-ccas-reunion/">Noël des marmailles : organiser le Noël d&#x27;une commune ou d&#x27;un CCAS à La Réunion</a></li>
-      <li style="padding:7px 0;">→ <a href="/blog/organiser-marche-de-noel-reunion/">Organiser un marché de Noël à La Réunion</a></li>
-      <li style="padding:7px 0;">→ <a href="/blog/brigade-noel-mairie-centre-ville-reunion/">Brigade de Noël en centre-ville : le dispositif clé en main pour les mairies</a></li>
+      <li><a href="/blog/deroule-programme-arbre-de-noel-entreprise-reunion/">Le déroulé type d&#x27;un arbre de Noël, heure par heure</a></li>
+      <li><a href="/blog/spectacle-noel-arbre-de-noel-entreprise-reunion/">Quel spectacle pour votre arbre de Noël d&#x27;entreprise ?</a></li>
+      <li><a href="/blog/arbre-de-noel-entreprise-2026-reserver-avant-rentree/">Arbre de Noël d&#x27;entreprise 2026 : pourquoi réserver avant la rentrée</a></li>
+      <li><a href="/blog/noel-marmailles-commune-ccas-reunion/">Noël des marmailles : organiser le Noël d&#x27;une commune ou d&#x27;un CCAS à La Réunion</a></li>
+      <li><a href="/blog/organiser-marche-de-noel-reunion/">Organiser un marché de Noël à La Réunion</a></li>
+      <li><a href="/blog/brigade-noel-mairie-centre-ville-reunion/">Brigade de Noël en centre-ville : le dispositif clé en main pour les mairies</a></li>
   </ul>
   <p style="margin:18px 0 0;"><a href="/blog/"><strong>Voir tous nos articles →</strong></a></p>
 </section>
