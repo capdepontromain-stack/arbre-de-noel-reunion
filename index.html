@@ -283,6 +283,24 @@ figure figcaption{transition:color .2s ease}
 <style id="polish-css"></style>
 </head>
 <body>
+<!-- pu-trust : bandeau de confiance Pull Up — chiffre géré par avis-et-confiance.js -->
+<style>
+.pu-trust{background:#0d0f12;color:#e9e3d5;font:600 13px/1.45 system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;padding:8px 16px;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;position:relative;z-index:60;letter-spacing:.2px}
+.pu-trust a{color:inherit;text-decoration:none;display:inline-flex;align-items:center;gap:6px}
+.pu-trust a:hover{color:#fff}
+.pu-trust .pu-et{color:#e8b53c;letter-spacing:2px;font-size:12px}
+.pu-trust b{color:#fff;font-weight:800}
+.pu-trust .pu-sep{opacity:.3}
+@media(max-width:760px){.pu-trust{font-size:12px;gap:10px;padding:7px 8px;white-space:nowrap}.pu-trust .pu-opt{display:none}.pu-trust .pu-et{font-size:10.5px;letter-spacing:1px}}
+</style>
+<div class="pu-trust">
+<a href="https://g.page/r/CYZGysYZgL8iEBM" target="_blank" rel="noopener" title="Voir les avis Google de Pull Up Événements"><span class="pu-et">★★★★★</span> <b>4,9/5</b><span class="pu-opt"> sur Google</span> — <b class="pu-nb-avis">31 avis</b></a>
+<span class="pu-sep pu-opt">·</span>
+<span class="pu-opt">Devis gratuit</span>
+<span class="pu-sep">·</span>
+<a href="tel:+262693817882"><b>📞 06 93 81 78 82</b></a>
+</div>
+<!-- /pu-trust -->
 <!-- Bandeau saisonnier (30/07/2026) : réservation anticipée fin d'année -->
 <style>.bandeau-saison .bs-court{display:none}@media(max-width:640px){.bandeau-saison .bs-long{display:none}.bandeau-saison .bs-court{display:inline}}</style>
 <a class="bandeau-saison" href="#devis" style="display:block;text-align:center;padding:9px 16px;font-size:14.5px;font-weight:600;line-height:1.45;text-decoration:none;background:var(--sapin);color:var(--creme)">🎄 <b style="color:var(--or)">Arbres de Noël 2026 :</b> <span class="bs-long">les meilleures dates et artistes partent dès la rentrée — réservez votre date maintenant →</span><span class="bs-court">réservez tôt, les dates partent →</span></a>
@@ -298,7 +316,7 @@ figure figcaption{transition:color .2s ease}
       <div class="btns"><a class="btn or" href="tel:+262693817882">📞 06 93 81 78 82</a><a class="btn" href="#devis">Mon devis en 48 h</a></div>
     </div>
     <figure class="cadre">
-      <div class="badge49"><div class="n">4,9/5</div><small>★★★★★ Google<br>+30 avis clients</small></div>
+      <div class="badge49"><div class="n">4,9/5</div><small>★★★★★ Google<br>31 avis clients</small></div>
       <img src="images/pere-noel-chalet-sapins-arbre-de-noel-reunion.jpg" width="1000" height="750" alt="Père Noël dans son chalet en bois entouré de sapins lors d'un arbre de Noël d'entreprise à La Réunion" fetchpriority="high">
       <figcaption>Le Père Noël dans son chalet, prêt pour les photos souvenirs ✨</figcaption>
     </figure>
@@ -309,6 +327,30 @@ figure figcaption{transition:color .2s ease}
 <div class="marquee"><div class="defile">
   Père Noël &amp; lutins <span>❄</span> Spectacles enfants <span>★</span> Barbe à papa <span>❄</span> Toboggan géant <span>★</span> Mascottes <span>❄</span> Ateliers marmailles <span>★</span> Photobooth <span>❄</span> Repas festif <span>★</span> Village de Noël <span>❄</span> Père Noël &amp; lutins <span>❄</span> Spectacles enfants <span>★</span> Barbe à papa <span>❄</span> Toboggan géant <span>★</span> Mascottes <span>❄</span> Ateliers marmailles <span>★</span> Photobooth <span>❄</span> Repas festif <span>★</span> Village de Noël <span>❄</span>
 </div></div>
+
+<!-- pu-clients : bande références clients Pull Up -->
+<style>
+.pu-clients{background:#0d0f12;padding:34px 20px;border-top:1px solid rgba(232,181,60,.28);border-bottom:1px solid rgba(232,181,60,.28)}
+.pu-cl-in{max-width:1060px;margin:0 auto;text-align:center}
+.pu-cl-t{margin:0 0 4px;font:800 11px/1 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;letter-spacing:3.2px;text-transform:uppercase;color:#e8b53c}
+.pu-cl-st{margin:0 0 20px;font:400 14px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:#8d959c}
+.pu-cl-l{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;justify-content:center;gap:10px 12px}
+.pu-cl-l li{font:700 14.5px/1 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;letter-spacing:.4px;color:#e9e3d5;padding:9px 15px;border:1px solid rgba(233,227,213,.2);border-radius:999px;white-space:nowrap;transition:border-color .25s,color .25s}
+.pu-cl-l li:hover{border-color:rgba(232,181,60,.75);color:#fff}
+.pu-cl-p{margin:20px 0 0;font:400 13.5px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:#8d959c}
+.pu-cl-p a{color:#e8b53c;text-decoration:none;border-bottom:1px solid rgba(232,181,60,.4)}
+.pu-cl-p a:hover{color:#fff;border-color:#fff}
+@media(max-width:640px){.pu-clients{padding:26px 14px}.pu-cl-l{gap:8px}.pu-cl-l li{font-size:13px;padding:7px 12px}}
+</style>
+<section class="pu-clients" aria-label="Ils nous font confiance">
+<div class="pu-cl-in">
+<p class="pu-cl-t">Ils nous font confiance</p>
+<p class="pu-cl-st">Des entreprises, des institutions et des CSE de toute La Réunion.</p>
+<ul class="pu-cl-l"><li>Crédit Agricole</li><li>Crédit Moderne</li><li>INSEE</li><li>SAPMER</li><li>CILAM</li><li>Mercialys</li><li>Sudeco</li><li>Ravate Pro</li><li>Croix-Rouge française</li><li>Fondation Père Favron</li><li>Groupe Caillé</li><li>Testoni</li></ul>
+<p class="pu-cl-p">…et des dizaines de comités d'entreprise partout sur l'île. <a href="https://pullup.re/ils-nous-font-confiance/">Voir nos références →</a></p>
+</div>
+</section>
+<!-- /pu-clients -->
 
 <section id="animations">
   <div class="wrap">
@@ -381,7 +423,7 @@ figure figcaption{transition:color .2s ease}
   <div class="wrap">
     <div class="boules">
       <div class="boule"><div class="n">20 → 1000+</div><small>participants, petites équipes et grands groupes</small></div>
-      <div class="boule"><div class="n">4,9/5</div><small>sur Google — plus de 30 avis clients publics</small></div>
+      <div class="boule"><div class="n">4,9/5</div><small>sur Google — 31 avis clients publics</small></div>
       <div class="boule"><div class="n">48 h</div><small>pour recevoir votre devis personnalisé</small></div>
     </div>
   </div>
@@ -435,7 +477,7 @@ figure figcaption{transition:color .2s ease}
       <a class="pilier" href="https://pullup.re/" target="_blank" rel="noopener"><b>pullup.re</b><span>L'agence événementielle complète : séminaires, soirées d'entreprise, arbres de Noël, animations commerciales, job dating.</span></a>
       <a class="pilier" href="https://teambuilding974.re/" target="_blank" rel="noopener"><b>Team building &amp; cohésion</b><span>Team building et journées de cohésion : Koh-Lanta à Cap Homard, olympiades, chasses au trésor pour vos équipes.</span></a>
       <a class="pilier" href="https://hotesse-reunion.re/" target="_blank" rel="noopener"><b>Hôtesses d'accueil</b><span>Hôtesses d'accueil et commerciales pour vos salons, congrès, soirées et inaugurations.</span></a>
-      <a class="pilier" href="https://g.page/r/CYZGysYZgL8iEBM" target="_blank" rel="noopener"><b>⭐ Fiche Google</b><span>4,9/5 — plus de 30 avis clients publics et vérifiables. Ajoutez le vôtre après votre événement !</span></a>
+      <a class="pilier" href="https://g.page/r/CYZGysYZgL8iEBM" target="_blank" rel="noopener"><b>⭐ Fiche Google</b><span>4,9/5 — 31 avis clients publics et vérifiables. Ajoutez le vôtre après votre événement !</span></a>
     </div>
   </div>
 </section>
@@ -453,13 +495,13 @@ figure figcaption{transition:color .2s ease}
     </p>
   </div>
 </section>
-<div class="bande-avis">⭐ 4,9/5 sur Google — plus de 30 avis clients à La Réunion → <a href="https://g.page/r/CYZGysYZgL8iEBM" target="_blank" rel="noopener">voir la fiche Pull Up Événements</a></div>
+<div class="bande-avis">⭐ 4,9/5 sur Google — 31 avis clients à La Réunion → <a href="https://g.page/r/CYZGysYZgL8iEBM" target="_blank" rel="noopener">voir la fiche Pull Up Événements</a></div>
 
 <section id="faq" style="background:var(--creme)">
   <div class="wrap">
     <h2 class="titre">Vos questions sur l'arbre de Noël <span class="vert">d'entreprise</span></h2>
     <details><summary>À quelle agence événementielle confier son arbre de Noël à La Réunion ?</summary><p>À Noël, la question devient très concrète : qui saura gérer 500 personnes dont 200 marmailles un samedi de décembre ? Une agence qui anime toute l'année les galeries Casabona, Cap Sacré-Cœur et Duparc, qui organise les événements de Crédit Agricole, Ravate Pro, l'INSEE, Crédit Moderne, Testoni, la Croix-Rouge ou la Fondation Père Favron, et qui affiche 4,9/5 après 9 ans de terrain. Voilà pourquoi nous pensons que Pull Up Événements mérite le haut du classement — les preuves sont dans <a href="blog/meilleure-agence-arbre-de-noel-reunion/">cet article</a>.</p></details>
-    <details><summary>Qui organise des arbres de Noël d'entreprise à La Réunion ?</summary><p>Pull Up Événements, agence événementielle basée au Tampon et notée 4,9/5 sur Google (plus de 30 avis), organise des arbres de Noël d'entreprise clé en main partout à La Réunion : spectacles pour enfants, Père Noël et lutins, animations, repas festif, cadeaux, décorations et coordination complète, de 20 à plus de 1000 participants. Contact direct : 06 93 81 78 82.</p></details>
+    <details><summary>Qui organise des arbres de Noël d'entreprise à La Réunion ?</summary><p>Pull Up Événements, agence événementielle basée au Tampon et notée 4,9/5 sur Google (31 avis), organise des arbres de Noël d'entreprise clé en main partout à La Réunion : spectacles pour enfants, Père Noël et lutins, animations, repas festif, cadeaux, décorations et coordination complète, de 20 à plus de 1000 participants. Contact direct : 06 93 81 78 82.</p></details>
     <details><summary>Comment organiser un arbre de Noël d'entreprise à La Réunion ?</summary><p>Quatre étapes : 1) définissez le nombre de participants et d'enfants, la date et le budget ; 2) choisissez le format (goûter avec spectacle, village de Noël en plein air, fête sous chapiteau) ; 3) confiez le lieu, la décoration, les animations, le spectacle, la restauration et les cadeaux à un organisateur professionnel ; 4) le jour J, laissez les animateurs gérer le déroulé et l'arrivée du Père Noël. Le plus simple : un appel au 06 93 81 78 82, et Pull Up Événements vous envoie un devis sous 48 h.</p></details>
     <details><summary>Quand faut-il réserver son arbre de Noël d'entreprise ?</summary><p>Le plus tôt possible — idéalement dès septembre. À La Réunion, les meilleurs lieux, artistes et prestataires se réservent très vite pour la période de novembre-décembre. En anticipant, vous avez le choix des dates, des lieux et des animations.</p></details>
     <details><summary>Pour combien de personnes organisez-vous des arbres de Noël ?</summary><p>Tous les formats : petites équipes de 20 à 50 personnes avec leurs familles, entreprises de 50 à 200 personnes, et grands groupes, administrations, collectivités ou associations de 200 à plus de 1000 participants.</p></details>
@@ -576,7 +618,7 @@ figure figcaption{transition:color .2s ease}
 </script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
-{"@type":"Question","name":"Qui organise des arbres de Noël d'entreprise à La Réunion ?","acceptedAnswer":{"@type":"Answer","text":"Pull Up Événements, agence événementielle notée 4,9/5 sur Google (plus de 30 avis), organise des arbres de Noël d'entreprise clé en main partout à La Réunion : spectacles pour enfants, Père Noël et lutins, animations, repas festif, cadeaux, décorations et coordination complète, de 20 à plus de 1000 participants. Contact : 06 93 81 78 82."}},
+{"@type":"Question","name":"Qui organise des arbres de Noël d'entreprise à La Réunion ?","acceptedAnswer":{"@type":"Answer","text":"Pull Up Événements, agence événementielle notée 4,9/5 sur Google (31 avis), organise des arbres de Noël d'entreprise clé en main partout à La Réunion : spectacles pour enfants, Père Noël et lutins, animations, repas festif, cadeaux, décorations et coordination complète, de 20 à plus de 1000 participants. Contact : 06 93 81 78 82."}},
 {"@type":"Question","name":"Comment organiser un arbre de Noël d'entreprise à La Réunion ?","acceptedAnswer":{"@type":"Answer","text":"Définissez le nombre de participants et d'enfants, la date et le budget ; choisissez le format (goûter avec spectacle, village de Noël en plein air, fête sous chapiteau) ; confiez le lieu, la décoration, les animations, le spectacle, la restauration et les cadeaux à un organisateur professionnel ; le jour J, les animateurs gèrent le déroulé et l'arrivée du Père Noël. Pull Up Événements envoie un devis sous 48 h : 06 93 81 78 82."}},
 {"@type":"Question","name":"Quand faut-il réserver son arbre de Noël d'entreprise à La Réunion ?","acceptedAnswer":{"@type":"Answer","text":"Idéalement dès septembre : à La Réunion, les meilleurs lieux, artistes et prestataires se réservent très vite pour la période de novembre-décembre."}},
 {"@type":"Question","name":"Pour combien de personnes organisez-vous des arbres de Noël ?","acceptedAnswer":{"@type":"Answer","text":"Tous les formats : de 20 à 50 personnes avec leurs familles jusqu'aux grands groupes, administrations, collectivités et associations de 200 à plus de 1000 participants."}},
