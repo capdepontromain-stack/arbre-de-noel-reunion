@@ -599,8 +599,19 @@ figure figcaption{transition:color .2s ease}
     <a class="grand-tel" href="tel:+262693817882">06 93 81 78 82</a>
     <p style="font-size:14px;opacity:.9">Romain, fondateur de Pull Up Événements</p>
     <form class="pu-form" id="form-devis">
+      <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" style="display:none" aria-hidden="true">
+      <input type="hidden" name="source_page" value="">
+      <input type="hidden" name="site" value="arbredenoel974.re">
       <label for="nom">Votre nom / société</label>
       <input id="nom" name="nom" required>
+      <label for="type">Prestation</label>
+      <select id="type" name="type">
+        <option>Arbre de Noël clé en main</option>
+        <option>Spectacle + animations</option>
+        <option>Animations et mascottes seules</option>
+        <option>Village de Noël / kids club</option>
+        <option>Autre / à définir</option>
+      </select>
       <div class="duo">
         <div>
           <label for="tel">Téléphone</label>
@@ -623,7 +634,7 @@ figure figcaption{transition:color .2s ease}
       </div>
       <div class="duo">
         <div>
-          <label for="date">Date souhaitée</label>
+          <label for="date">Date de l'événement</label>
           <input id="date" name="date" placeholder="Ex : 14/12/2026">
         </div>
         <div>
@@ -968,15 +979,14 @@ function pisterEvenement(nom, params){
 }
 
 function pisterConversionDevis(){
-  pisterEvenement('demande_devis', { source: SITE });
+  if (!window.__puDevisEnvoye) { window.__puDevisEnvoye = true; pisterEvenement('devis_envoye', { site: SITE, prestation: (function(){ try { var el = document.querySelector('#form-devis [name=\"type\"]'); return el ? el.value : ''; } catch (err) { return ''; } })(), source_page: location.pathname }); }
   if (typeof gtag === 'function' && SUIVI.ADS_DEVIS) {
     gtag('event', 'conversion', { send_to: SUIVI.ADS_DEVIS });
   }
 }
 
 document.querySelectorAll('a[href^="tel:"]').forEach(function(a){
-  a.addEventListener('click', function(){
-    pisterEvenement('clic_telephone', { source: SITE });
+  a.addEventListener('click', function(ev){ if (ev && ev.__puAppel) return; if (ev) ev.__puAppel = true; pisterEvenement('appel_clic', { site: SITE, page: location.pathname });
   });
 });
 
@@ -989,13 +999,14 @@ document.querySelectorAll('a[href^="tel:"]').forEach(function(a){
   var f    = document.getElementById('form-devis');
   var btn  = document.getElementById('btn-devis');
   var etat = document.getElementById('devis-etat');
-  if (!f) return;
+  if (!f) return; try { if (f.source_page) f.source_page.value = location.pathname; } catch (err) {}
 
   function champs(){
     return {
       "Nom / société":     f.nom.value,
       "Téléphone":         f.telephone.value,
       "E-mail":            f.email.value,
+      "Prestation":        f.type.value,
       "Nombre d'adultes":  f.adultes.value  || "non précisé",
       "Nombre d'enfants":  f.enfants.value  || "non précisé",
       "Date souhaitée":    f.date.value     || "non précisée",
@@ -1015,7 +1026,7 @@ document.querySelectorAll('a[href^="tel:"]').forEach(function(a){
   }
 
   f.addEventListener('submit', function(e){
-    e.preventDefault();
+    e.preventDefault(); if (f.botcheck && f.botcheck.checked) { f.reset(); return; }
     btn.disabled = true;
     var libelle = btn.textContent;
     btn.textContent = "Envoi en cours…";
@@ -1023,7 +1034,7 @@ document.querySelectorAll('a[href^="tel:"]').forEach(function(a){
 
     var donnees = champs();
     donnees._subject = "🎄 Devis arbre de Noël — " + f.nom.value;
-    donnees["Reçu depuis"] = SITE;
+    donnees["Reçu depuis"] = SITE; donnees.source_page = (f.source_page && f.source_page.value) || location.pathname; donnees.site = "arbredenoel974.re"; donnees.botcheck = false;
 
     function envoyerWeb3(){
       if (!CLE_WEB3FORMS) return Promise.reject(new Error('clé absente'));
@@ -1062,7 +1073,7 @@ document.querySelectorAll('a[href^="tel:"]').forEach(function(a){
       f.reset();
       btn.textContent = "Demande envoyée ✓";
       etat.style.color = "#fff";
-      etat.textContent = "Merci ! Votre demande est bien arrivée. Nous revenons vers vous sous 24 h — pour aller plus vite, appelez le 06 93 81 78 82.";
+      etat.textContent = "Merci ! Votre demande est bien arrivée. Nous revenons vers vous sous 24 h. Pour aller plus vite, appelez le 06 93 81 78 82.";
       pisterConversionDevis();
       if (window.puConfettis) window.puConfettis(btn);
     })
@@ -1070,7 +1081,7 @@ document.querySelectorAll('a[href^="tel:"]').forEach(function(a){
       btn.disabled = false;
       btn.textContent = libelle;
       etat.style.color = "#ffd9a0";
-      etat.textContent = "L'envoi automatique n'a pas fonctionné — nous ouvrons votre messagerie avec la demande pré-remplie. Ou appelez le 06 93 81 78 82.";
+      etat.textContent = "L'envoi automatique n'a pas fonctionné : nous ouvrons votre messagerie avec la demande pré-remplie. Ou appelez le 06 93 81 78 82.";
       secoursMessagerie();
     });
   });
