@@ -228,6 +228,11 @@ footer p{margin-bottom:9px;max-width:900px;margin-left:auto;margin-right:auto}
     <label for="msg">Votre projet en quelques mots (facultatif)</label>
     <textarea id="msg" name="message" rows="2" placeholder="Formule visée, lieu, budget…"></textarea>
     <button class="btn or" type="submit" id="btn-devis">Poser une option sur ma date 🎄</button>
+      <label for="pu-consent" style="display:flex;gap:9px;align-items:flex-start;margin:16px 0 0;font-weight:400;font-size:13.5px;line-height:1.45;cursor:pointer;text-transform:none;letter-spacing:0">
+        <input type="checkbox" id="pu-consent" name="consentement" value="oui" required style="width:auto;flex:none;margin:2px 0 0">
+        <span>J'accepte que mes informations soient utilisées pour traiter ma demande.</span>
+      </label>
+      <p style="font-size:12.5px;line-height:1.5;margin:8px 0 0;color:inherit;font-weight:400">Vos coordonnées servent uniquement à vous répondre et à établir votre devis. Conservées 3 ans maximum, jamais transmises à des tiers. <a href="/confidentialite/" style="color:inherit;text-decoration:underline">Politique de confidentialité</a></p>
     <p class="pu-etat" id="devis-etat" role="status" aria-live="polite" style="font-size:14px;margin-top:10px"></p>
     <p class="pu-mini">Réponse sous 24 h. Encore plus rapide : <a style="color:var(--or)" href="tel:+262693817882">appelez le 06 93 81 78 82</a>.</p>
   </form>
@@ -253,6 +258,7 @@ footer p{margin-bottom:9px;max-width:900px;margin-left:auto;margin-right:auto}
   <p><b style="color:#fff">Arbre de Noël 974</b> — organisation d'arbres de noël d'entreprise par <a href="https://pullup.re/arbre-de-noel/">Pull Up Événements</a>, agence événementielle à La Réunion. Et pour comparer tous nos tarifs, prestation par prestation : <a href="https://pullup.re/tarifs/">la page tarifs de Pull Up Événements</a>.</p>
   <p><a href="/">Accueil</a> · <a href="/blog/">Le blog</a> · <a href="https://pullup.re/">pullup.re</a> · <a href="https://teambuilding974.re/">Journées de cohésion</a> · <a href="https://animationenfant974.re/">🎈 Animation enfants</a> · <a href="https://soiree974.re/">🥂 Soirée de fin d'année</a> · <a href="https://seminaire974.re/">🎤 Séminaires</a> · <a href="https://g.page/r/CYZGysYZgL8iEBM">⭐ 4,9/5 sur Google</a></p>
   <p style="font-size:12.5px">6 Impasse des Sœurs Brontë, 97430 Le Tampon · 📞 06 93 81 78 82 · ✉️ contact@pullup.re · © 2026 Pull Up Événements</p>
+  <p class="pu-liens-legaux" style="font-size:13px"><a href="/mentions-legales/" style="text-decoration:underline">Mentions légales</a> · <a href="/confidentialite/" style="text-decoration:underline">Politique de confidentialité</a></p>
 </footer>
 <script src="/suivi.js" defer></script>
 <script>
@@ -297,7 +303,7 @@ footer p{margin-bottom:9px;max-width:900px;margin-left:auto;margin-right:auto}
 
     var donnees = champs();
     donnees._subject = "🎄 Option Noël 2026 — " + f.nom.value;
-    donnees["Reçu depuis"] = SITE; donnees.source_page = "/noel-2026/"; donnees.site = SITE; donnees.botcheck = false;
+    donnees["Reçu depuis"] = SITE; donnees.source_page = "/noel-2026/"; donnees.site = SITE; donnees.botcheck = false; donnees["Consentement RGPD"] = (f.consentement && f.consentement.checked) ? "oui" : "non";
 
     function envoyerWeb3(){
       var corps = { access_key: CLE_WEB3FORMS, subject: donnees._subject, from_name: 'Arbre de Noël 974' };
