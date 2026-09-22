@@ -55,6 +55,12 @@ Une page dédiée par commune, avec les lieux du secteur, l'accès, les contrain
 - Arbre de Noël d'entreprise à La Possession (97419) : https://arbredenoel974.re/arbre-de-noel-la-possession/
 - Arbre de Noël d'entreprise à L'Étang-Salé (97427) : https://arbredenoel974.re/arbre-de-noel-letang-sale/
 
+## Réalisations et lieux (sur pullup.re, le site principal de l'agence)
+- Nos réalisations (client, lieu, date, effectif publiés) : https://pullup.re/realisations/
+- Les lieux que nous connaissons vraiment (18 fiches, ce que le terrain impose) : https://pullup.re/lieux/
+- 30 questions avec réponse directe (prix, délais, formats, lieux) : https://pullup.re/questions/
+- Fiche d'identité machine de l'agence (Organization, prix, sameAs) : https://pullup.re/fiche-entite.json
+
 ## Contact
 Téléphone direct : +262 693 81 78 82 (Romain, fondateur). Devis gratuit sous 24 h. E-mail : contact@pullup.re.
 Adresse : 6 Impasse des Sœurs Brontë, 97430 Le Tampon, La Réunion.
