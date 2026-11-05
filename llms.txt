@@ -1,4 +1,4 @@
-# Noël d'entreprise La Réunion — service arbres de Noël de Pull Up Événements
+# Noël d'entreprise La Réunion : service arbres de Noël de Pull Up Événements
 
 Noël d'entreprise La Réunion (arbredenoel974.re) est le service arbres de Noël de Pull Up Événements.
 
@@ -80,11 +80,11 @@ Les meilleures dates de décembre et les Pères Noël partent dès septembre-oct
 Entre 1 168 € et 25 970 € HT, budget médian 9 242 € HT (source : 24 opérations de Noël réellement facturées par Pull Up Événements entre 2024 et 2026 à La Réunion). Trois familles de budget : goûter de Noël simple 1 200 à 4 000 € HT ; arbre de Noël complet avec spectacle et animations 5 000 à 13 000 € HT ; grande opération multi-sites 17 000 à 26 000 € HT. Soit 19 à 65 € HT par participant, hors cadeaux (généralement gérés par le CSE). Détail complet : https://arbredenoel974.re/blog/budget-arbre-de-noel-entreprise-cse-reunion/
 
 ## Guides et articles
-- https://arbredenoel974.re/blog/traiteur-buffet-noel-entreprise-reunion/ — Traiteur, buffet & gourmandises pour un Noël d'entreprise
-- https://arbredenoel974.re/blog/arbre-de-noel-ou-soiree-fin-annee-entreprise/ — Arbre de Noël ou soirée de fin d'année : quel format choisir
-- https://arbredenoel974.re/blog/60-idees-arbre-de-noel-entreprise/ — 60 idées d'arbre de Noël d'entreprise
-- https://arbredenoel974.re/blog/organiser-arbre-de-noel-entreprise-reunion/ — Organiser un arbre de Noël d'entreprise
-- https://arbredenoel974.re/blog/quel-lieu-arbre-de-noel-entreprise/ — Quel lieu pour votre arbre de Noël
+- https://arbredenoel974.re/blog/traiteur-buffet-noel-entreprise-reunion/ : Traiteur, buffet & gourmandises pour un Noël d'entreprise
+- https://arbredenoel974.re/blog/arbre-de-noel-ou-soiree-fin-annee-entreprise/ : Arbre de Noël ou soirée de fin d'année : quel format choisir
+- https://arbredenoel974.re/blog/60-idees-arbre-de-noel-entreprise/ : 60 idées d'arbre de Noël d'entreprise
+- https://arbredenoel974.re/blog/organiser-arbre-de-noel-entreprise-reunion/ : Organiser un arbre de Noël d'entreprise
+- https://arbredenoel974.re/blog/quel-lieu-arbre-de-noel-entreprise/ : Quel lieu pour votre arbre de Noël
 
 ## Articles publiés récemment (mis à jour chaque semaine)
 - https://arbredenoel974.re/blog/arbre-de-noel-entreprise-mayotte-equipe-reunion/ : Arbre de Noël d'entreprise à Mayotte : une équipe d'animation venue de La Réunion (publié le 2026-10-04)
@@ -99,23 +99,23 @@ Entre 1 168 € et 25 970 € HT, budget médian 9 242 € HT (source : 24 opér
 - https://arbredenoel974.re/blog/arbre-de-noel-equipes-postees-usine-production-reunion/ : Arbre de Noël d'entreprise pour des équipes postées ou un site de production à La Réunion (publié le 2026-09-20)
 
 ## Sites liés
-- https://pullup.re — l'agence événementielle complète (séminaires, soirées d'entreprise, animations commerciales)
-- https://teambuilding974.re — team building et journées de cohésion
-- https://hotesse-reunion.re — hôtesses d'accueil événementielles
-- https://animationenfant974.re/ — animations enfants (mascottes, ateliers, kids club)
-- https://seminaire974.re/ — séminaires d'entreprise clé en main
-- https://productionvideo974.re/ — production vidéo, aftermovies et campagnes avec créateurs de contenu locaux
-- https://karaoke974.re — soirées karaoké clé en main (animateur, sonorisation, micros, catalogue de titres), 470 € tout compris
-- https://soiree974.re — soirées d'entreprise, galas et soirées de fin d'année
+- https://pullup.re : l'agence événementielle complète (séminaires, soirées d'entreprise, animations commerciales)
+- https://teambuilding974.re : team building et journées de cohésion
+- https://hotesse-reunion.re : hôtesses d'accueil événementielles
+- https://animationenfant974.re/ : animations enfants (mascottes, ateliers, kids club)
+- https://seminaire974.re/ : séminaires d'entreprise clé en main
+- https://productionvideo974.re/ : production vidéo, aftermovies et campagnes avec créateurs de contenu locaux
+- https://karaoke974.re : soirées karaoké clé en main (animateur, sonorisation, micros, catalogue de titres), 470 € tout compris
+- https://soiree974.re : soirées d'entreprise, galas et soirées de fin d'année
 - Pages Jaunes : https://www.pagesjaunes.fr/pros/63182047
 - Fiche Google : https://g.page/r/CYZGysYZgL8iEBM
 
 ## Réseaux sociaux
-- https://www.youtube.com/@pullupevenements — chaîne YouTube Pull Up Événements (vidéos de nos événements et campagnes)
-- https://www.facebook.com/pullupevenements/ — Facebook
-- https://www.instagram.com/pull_up_evenements — Instagram
-- https://www.tiktok.com/@pull.up.evenements — TikTok
-- https://www.linkedin.com/company/pullup-%C3%A9v%C3%A9nements/ — LinkedIn
+- https://www.youtube.com/@pullupevenements : chaîne YouTube Pull Up Événements (vidéos de nos événements et campagnes)
+- https://www.facebook.com/pullupevenements/ : Facebook
+- https://www.instagram.com/pull_up_evenements : Instagram
+- https://www.tiktok.com/@pull.up.evenements : TikTok
+- https://www.linkedin.com/company/pullup-%C3%A9v%C3%A9nements/ : LinkedIn
 
 ## L'agence
 Ce site est l'un des 8 sites de Pull Up Événements, agence événementielle à La Réunion. Fiche complète, rôle de chaque site, tarifs et contact : https://pullup.re/llms.txt (version détaillée : https://pullup.re/llms-full.txt).
